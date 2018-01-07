@@ -18,7 +18,7 @@
             something: 1
         },
         onLoad: function() {
-            // 老的
+            // 老的更新逻辑
             this.setData({
                 something: 2
             });
@@ -32,7 +32,7 @@
             something: 1
         },
         onLoad: function() {
-            // 这是新的逻辑！
+            // 这是新的更新逻辑！
             this.data.something = 2;
         }
     });
