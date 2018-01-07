@@ -13,10 +13,10 @@ if (Page) {
         // 篡改onLoad方法
         let oriOnLoad = options.onLoad;
         options.onLoad = function onLoad() {
-            // 变异data属性
+            // 变异原始options中的data属性
             mutate(options.data, this);
-            // 恢复方法
-            options.onLoad = oriOnLoad;
+            // 还要额外变异经过微信小程序处理过的data属性，否则通过this.data赋值不会触发更新
+            mutate(this["data"], this);
             // 调用原始onLoad方法
             return oriOnLoad.apply(this, arguments);
         };

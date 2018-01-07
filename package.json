@@ -1,6 +1,6 @@
 {
   "name": "wxmutator",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "优化微信小程序的绑定功能，引用该程序后，在更新ViewModel时仅需像普通赋值一样设置属性即可，无需调用setData方法",
   "main": "wxmutator.js",
   "types": "wxmutator.d.ts",
