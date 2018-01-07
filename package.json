@@ -1,0 +1,34 @@
+{
+  "name": "wxmutator",
+  "version": "1.0.1",
+  "description": "优化微信小程序的绑定功能，引用该程序后，在更新ViewModel时仅需像普通赋值一样设置属性即可，无需调用setData方法",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "compile": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raykid/WXMutator.git"
+  },
+  "keywords": [
+    "微信",
+    "小程序",
+    "MVVM",
+    "绑定",
+    "优化"
+  ],
+  "author": "Raykid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raykid/WXMutator/issues"
+  },
+  "homepage": "https://github.com/Raykid/WXMutator#readme",
+  "devDependencies": {
+    "@types/weixin-app": "^1.0.2"
+  }
+}
