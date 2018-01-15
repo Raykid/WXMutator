@@ -22,7 +22,7 @@ if(Page)
             // 还要额外变异经过微信小程序处理过的data属性，否则通过this.data赋值不会触发更新
             mutate(this["data"], this);
             // 调用原始onLoad方法
-            return oriOnLoad.apply(this, arguments);
+            return oriOnLoad && oriOnLoad.apply(this, arguments);
         };
         // 执行原始方法
         OriPage.apply(this, arguments);
